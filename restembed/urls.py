@@ -16,6 +16,9 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
+from restembed.core.views import save_embed
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', save_embed),
 ]
