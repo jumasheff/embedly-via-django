@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class SavedEmbeds(models.Model):
     type = models.CharField(max_length=15)
     provider_url = models.URLField()
@@ -15,9 +15,3 @@ class SavedEmbeds(models.Model):
     author_url = models.URLField()
     author_name = models.CharField(max_length=100)
     version = models.DecimalField(max_digits=4, decimal_places=2)
-
-    def __str__(self):
-        return 
-
-    def __unicode__(self):
-        return 
